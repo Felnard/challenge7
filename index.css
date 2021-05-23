@@ -91,8 +91,25 @@ button{
     font-weight: 700;
     border:none;
     padding:1rem 0;
-
 }
+
+button:hover{
+    background-color:hsl(71, 67%, 59%);
+}
+
+.attribution {
+    font-size: 11px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  p.attribution {
+      color: black;
+  }
 
 /* THIRD */
 div.third{
@@ -101,3 +118,38 @@ div.third{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     }
+
+@media (min-width: 768px){
+
+    * {
+        margin:0;
+        padding:0;
+    }
+    .middle{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction:row;
+        width:730px;
+        flex-wrap: wrap;
+    }
+   
+    .middle div.first{
+        height: 40%;
+    }
+
+
+.middle div.second{
+        width: 50%;
+        background-color:hsl(179, 62%, 43%);
+        height:316px;
+        border-bottom-left-radius: 5px;
+    }
+    
+    .middle div.third{
+        width: 50%;
+        height:50%;
+        border-bottom-left-radius: 0;
+    }
+    
+}
